@@ -51,6 +51,7 @@ GreenShadowCropMonitoringSystem/
 │   └── README.md                   # Project documentation
 ├── backend/                        # Backend (placeholder for API server)
 └── docs/                           # Documentation files
+```
 
 ---
 
