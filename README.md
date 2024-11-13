@@ -71,8 +71,8 @@ You can open the index.html file directly in your browser to view the applicatio
 To serve the frontend locally, you can use a simple HTTP server:
 
 ```bash
-# Using Python HTTP server
-python3 -m http.server 8000
+# Using Java HTTP server
+RUN THE SERVER IN THE BACKEND FOLDER
 ```
 Visit http://localhost:8000 in your browser.
 
@@ -136,5 +136,7 @@ For any questions or support, please contact us at:
 Kavindu Malshan Jayasinghe.
 Galle.
 Email: kavindu11250403@gmail.com
+
+---
 
 ## Thank you for visiting the Green Shadow Crop Monitoring System! Happy farming 🌱
