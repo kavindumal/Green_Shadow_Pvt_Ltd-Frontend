@@ -1,18 +1,85 @@
-html, body {
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.spinner-logo {
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #6BAA75;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+body, html {
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  background-image: url('/assets/images/background.png'); 
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .centered-rectangle {
@@ -20,5 +87,116 @@ html, body {
   height: 780px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  display: flex;
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  padding: 60px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-weight: bold;
+  font-size: 35px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-weight: 300;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-weight: 300;
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.text-field {
+  width: 525px;
+  height: 60px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid #6BAA75;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #333;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-field:hover {
+  border-color: #5a9361;
+  box-shadow: 0 0 8px rgba(107, 170, 117, 0.4);
+}
+
+.text-field:focus {
+  border-color: #4c8a64;
+  box-shadow: 0 0 10px rgba(76, 138, 100, 0.5);
+  outline: none;
+}
+
+.reset-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6BAA75;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.reset-link:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: #6BAA75;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 525px;
+  height: 60px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #5a9361;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+  background-color: #4c8a64;
+}
+
+.right-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
 }
