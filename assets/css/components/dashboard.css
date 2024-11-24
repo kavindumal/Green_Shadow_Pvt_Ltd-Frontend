@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.dashboard-wrapper {
+    background: rgba(255, 255, 255, 0.153);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 1400px;
+    max-height: 1500px;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #72c191;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    padding: 10px 20px;
+    background-color: #72c191;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 14px;
+    color: #555;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(107, 170, 117, 0.1);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #6BAA75;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active:hover {
+    background-color: #6BAA75;
+    color: #fff;
+}

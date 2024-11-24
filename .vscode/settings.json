@@ -1,5 +1,4 @@
 {
-    "liveServer.settings.root": "/index.html",
-    "liveServer.settings.defaultPage": "index.html"
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.CustomBrowser": "chrome",
 }
-  
