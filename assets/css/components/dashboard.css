@@ -145,3 +145,124 @@ body {
     padding-top: 100px;
 }
 
+.table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #72c191;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: #72c191;
+    border-color: #72c191;
+}
+
+.btn-primary:hover {
+    background-color: #5fa77a;
+    border-color: #5fa77a;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #72c191;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+#cropForm .form-label {
+    font-weight: bold;
+}
+
+#cropForm .form-control {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cropForm .btn-primary {
+    background-color: #72c191;
+    border-color: #72c191;
+}
+
+#cropForm .btn-primary:hover {
+    background-color: #5fa77a;
+    border-color: #5fa77a;
+}
+
+.container.mt-4 {
+    margin-top: 2rem !important;
+}
+
+h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+.row .card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.row .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.row .card-body {
+    padding: 15px;
+}
+
+.row .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.row .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.container.mt-4 {
+    margin-top: 2rem !important;
+    padding: 50px;
+}
+
+.d-flex > nav {
+    margin-right: 20px;
+}
+
+.content-wrapper {
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
