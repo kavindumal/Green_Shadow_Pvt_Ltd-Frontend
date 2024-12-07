@@ -166,7 +166,7 @@ export function deleteField(fieldId) {
 
 export function getAllStaff() {
   return $.ajax({
-    url: "http://localhost:8080/cms/api/v1/staff",
+    url: "http://localhost:8080/greenShadowPvtLtd/api/v1/staff",
     method: "GET",
     contentType: "application/json",
     headers: {
