@@ -45,13 +45,75 @@
           </div>
         </nav>
         <div class="content-wrapper flex-grow-1">
-          
+          <div class="container mt-4">
+            <!-- Header Section -->
+            <div class="row">
+              <div class="col-12">
+                <div class="header">
+                  <h1>Welcome to Green Shadow Dashboard</h1>
+                  <p>Monitor and manage your fields, crops, staff, and vehicles efficiently.</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Animated Card Section -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card animated fadeInUp">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fields</h5>
+                    <p class="card-text">Manage and monitor all your fields easily.</p>
+                    <a href="/pages/field.html" class="btn btn-primary">View Fields</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card animated fadeInUp delay-1s">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Crops</h5>
+                    <p class="card-text">Track crop growth and performance.</p>
+                    <a href="/pages/crop.html" class="btn btn-primary">View Crops</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card animated fadeInUp delay-2s">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Staff</h5>
+                    <p class="card-text">Oversee your staff and their assignments.</p>
+                    <a href="/pages/staff.html" class="btn btn-primary">View Staff</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Crop Performance</h5>
+                    <canvas id="cropChart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Field Usage</h5>
+                    <canvas id="fieldChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
     </div></div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

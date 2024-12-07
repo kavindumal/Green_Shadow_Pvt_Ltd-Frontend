@@ -165,7 +165,7 @@ export function deleteCrop(cropId) {
 
 export function getAllFields() {
   return $.ajax({
-    url: "http://localhost:8080/cms/api/v1/field",
+    url: "http://localhost:8080/greenShadowPvtLtd/api/v1/field",
     method: "GET",
     contentType: "application/json",
     headers: {

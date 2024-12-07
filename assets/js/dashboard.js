@@ -14,3 +14,5 @@ document.getElementById('nav-logout').addEventListener('click', function(event) 
       }
     });
   });
+
+  
